@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>To Do List Job</title>
+
+  <!-- Link Css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Link Js -->
+  <script src="js/script.js" defer></script>
+
+  <!-- Link Ícon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="https://kit.fontawesome.com/0815ce53df.js" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>To Do List Job</h1>
+    </header>
+
+    <form  id="newForm">
+      <div class="newJob" id="newJob">
+        <div class="inputs">
+          <div class="field nomeJ">
+            <label for="nomeJob">Nome Tarefa</label>
+            <input type="text" name="nomeJob" id="nomeJob" placeholder="O que você precisa fazer?">
+          </div>
+          <div class="field dataJ">
+            <label for="dateJob">Data Tarefa:</label>
+            <input type="date" name="dateJob" id="dateJob">
+          </div>
+        </div>
+
+        <button type="submit" class="btnControl" id="btnNewJob">
+          <i class="fa-thin fa-plus"></i>
+        </button>
+      </div>
+    </form>
+
+    <form id="editForm" class="hide">
+      <div class="editJob" id="editJob">
+        <div class="inputs">
+          <div class="field nomeJ">
+            <label for="eNomeJob">Nome Tarefa</label>
+            <input type="text" name="eNomeJob" id="eNomeJob" placeholder="O que você precisa fazer?">
+          </div>
+          <div class="field dataJ">
+            <label for="eDateJob">Data Tarefa:</label>
+            <input type="date" name="eDateJob" id="eDateJob">
+          </div>
+        </div>
+
+        <div class="btns">
+          <button type="submit" class="btnControl" id="btnCancelEditJob">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button type="submit" class="btnControl" id="btnEditJob">
+            <i class="fa-solid fa-edit"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <section class="toolBar" id="toolBar">
+
+      <article class="search" id="search">
+        <div class="field">
+          <label for="searchJob">Pesquisar:</label>
+          <input type="text" name="searchJob" id="searchJob" placeholder="Buscar Tarefa ...">
+        </div>
+        <button class="clearSearch" id="clearSearch">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+      </article>
+
+      <article class="filter" id="filter">
+        <div class="field">
+          <label for="searchJob">Selecionar:</label>
+         <select name="filterJob" id="filterJob">
+          <option value="all">Todos</option>
+          <option value="done">Feitos</option>
+          <option value="todo">A fazer</option>
+         </select>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="toDoList" id="toDoList">
+
+      <!-- <div class="cardToDo">
+        <p class="data">20/08/2022</p>
+        <div class="job">
+          <h3>Varrer o terreiro</h3>
+          <div class="btnCard">
+            <button class="finishToDo">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="editToDo">
+              <i class="fa-solid fa-pen"></i>
+            </button>
+            <button class="removeToDo">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="cardToDo done">
+        <p class="data">19/08/2022</p>
+        <div class="job">
+          <h3>Tomar Banho</h3>
+          <div class="btnCard">
+            <button class="finishToDo">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="editToDo">
+              <i class="fa-solid fa-pen"></i>
+            </button>
+            <button class="removeToDo">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+    </section>
+
+  </main>
+  
+</body>
+</html>

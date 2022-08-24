@@ -1,0 +1,210 @@
+/* Geral - Resete */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+button {
+  background-color: #fdfdfd;
+  color: #102f53;
+  border: solid 2px #102f53;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  transition: 1s;
+  width: 30px;
+  height: 30px;
+}
+
+button:hover {
+  background-color: #102f53;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+button i {
+  color: #102f53;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input ,
+select {
+  padding-left: 10px;
+  height: 35px;
+  width: 100%;
+  margin-top: 3px;
+  border:  solid 1px #102f53;
+  border-radius: 5px;
+}
+
+input:focus ,
+select:focus {
+  outline: none;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Container */
+
+main {
+  max-width: 450px;
+  margin: 5rem auto;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: solid 1px #ccc;
+}
+
+/* Form */
+
+#newForm ,
+#editForm {
+  padding: 1rem;
+  border-bottom: solid 1px #ccc;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.inputs .field {
+  width: 48%;
+}
+
+.inputs .nomeJ {
+  width: 60%;
+}
+
+.inputs .dataJ {
+  width: 35%;
+}
+
+.btnControl {
+  width: 45%;  
+}
+
+.newJob .btnControl {
+  margin: 0 auto;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ToolBar */
+
+.toolBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: solid 1px #ccc;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: solid 1px #ddd;
+  margin-right: 10px;
+}
+
+.search .field {
+  width: 80%;
+}
+
+.search .clearSearch {
+  margin-right: auto;
+  align-self: flex-end;
+  height: 35px;
+  width: 35px;
+}
+
+/* List CardToDo */
+
+.toDoList {
+  padding: 1rem;
+}
+
+.cardToDo {
+  padding: 0.5rem;
+  box-shadow: 0px 0px 2px 0px #102f53;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.job {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job h3 {
+  font-size: 12px;
+  width: 65%;
+}
+
+.cardToDo p {
+  font-size: 10px;
+  border-bottom: solid 1px #ddd;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.job .btnCard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+  margin-left: 5px;
+}
+
+.done {
+  background-color: #395169;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.done p {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.hide {
+  display: none;
+}
